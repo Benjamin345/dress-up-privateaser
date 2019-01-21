@@ -8,9 +8,13 @@
     const template = actors.map(actor => {
       return `
         <div class="actor">
-          <span>${actor.who}</span>
-          <span>${actor.type}</span>
-          <span>${actor.amount}</span>
+          <div class="container">
+          <div class="row">
+            <div class="col-sm"><span>${actor.who}</span></div>
+            <div class="col-sm"><span>${actor.type}</span></div>
+            <div class="col-sm"><span>${actor.amount}</span></div>
+          </div>
+          </div>
         </div>
       `;
     }).join('');

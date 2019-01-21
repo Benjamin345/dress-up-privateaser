@@ -1,0 +1,79 @@
+h1{
+	margin-left: 40%;
+	margin-top:50px;
+	margin-bottom:50px;
+
+}
+
+#compute{
+	font-family:'New Century Schoolbook';
+	font-size:30px;
+	margin-top:180px;
+	margin-left:20%;
+	position:absolute;
+}
+
+
+#bar{
+	font-family:'New Century Schoolbook';
+	margin-top:60px;
+	font-size:30px;
+	position:absolute;
+}
+
+#booker{
+	font-family:'New Century Schoolbook';
+	margin-top:120px;
+	font-size:30px;
+	position:absolute;
+	
+}
+
+#deductible{
+	font-family:'New Century Schoolbook';
+	font-size:30px;
+	line-height:1.0;
+	font-weight: 900;
+}
+
+#actors{
+	font-family:'New Century Schoolbook';
+	margin-top:300px;
+	margin-bottom:100px;
+	font-size:30px;
+	margin-left:15%;
+	position:absolute;
+}
+input[type=checkbox] {
+  transform: scale(2);
+}
+.intro {
+	font-family:'Playball',cursive;
+	font-size:60px;
+	line-height:1.0;
+	font-weight: 900;
+	color:#fff;
+}
+
+.menu {
+	 margin-top:0px;
+	 position:absolute;
+	 z-index:999;
+	 margin-top:20px;
+	 left:0px;
+	 right:0px;
+	 bottom:0;
+}
+
+.parallax {
+	text-align:center;
+	background-position:center center;
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-attachment:fixed !important;
+	overflow:hidden;
+}
+.parallax-pattern-overlay {
+	background-image:url(../img/pattern.png);
+	background-repeat: repeat;
+}

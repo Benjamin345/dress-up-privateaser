@@ -93,24 +93,24 @@ const PRIVATEASER = (() => {
     const deductibleOption = DEDUCTIBLE_PER_PERSON * persons * +option;
 
     var actors = [{
-      'who': 'booker',
-      'type': 'debit',
+      'who': 'booker ',
+      'type': '(debit):',
       'amount': price + deductibleOption
     }, {
-      'who': 'bar',
-      'type': 'credit',
+      'who': 'bar ',
+      'type': '(credit):',
       'amount': price - commission.value
     }, {
-      'who': 'insurance',
-      'type': 'credit',
+      'who': 'insurance ',
+      'type': '(credit):',
       'amount': commission.insurance
     }, {
-      'who': 'treasury',
-      'type': 'credit',
+      'who': 'treasury ',
+      'type': '(credit):',
       'amount': commission.treasury
     }, {
-      'who': 'privateaser',
-      'type': 'credit',
+      'who': 'privateaser ',
+      'type': '(credit):',
       'amount': commission.privateaser + deductibleOption
     }];
 

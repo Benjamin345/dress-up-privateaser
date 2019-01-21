@@ -1,23 +1,60 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
   <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Playball' rel='stylesheet' type='text/css'>
+
     <title>CSS/HTML Workshop with Privateaser</title>
   </head>
   <body>
-    <div id="bar">
-      <input class="js-name" type="text" placeholder="Bar name"/>
-      <input class="js-price-by-hour" type="number" placeholder="Price by hour"/>
-      <input class="js-price-by-person" type="number" placeholder="Price by person"/>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+    <header>
+      <div class="parallax text-center" style="background-image: url(http://wowthemes.net/demo/leroy/img/dummy1.jpg);">
+        <div class="container text-center" style="height:600px;padding-top:170px;">
+            <a href="#"><img id="site-title" class=" wow fadeInDown" wow-data-delay="0.0s" wow-data-duration="0.9s" src="img/logo.png" alt="logo"/></a>
+            <h2 class="intro wow zoomIn" wow-data-delay="0.4s" wow-data-duration="0.9s">Catering & Special Events</h2>
+        </div>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="row">
+        <div id="bar">
+          <input class="js-name" type="text" placeholder="Bar name"/>
+          <input class="js-price-by-hour" type="number" placeholder="Price by hour"/>
+          <input class="js-price-by-person" type="number" placeholder="Price by person"/>
+        </div>
+        <div class="w-100"></div>
+
+        <div id="booker">
+          <input class="js-name" type="text" placeholder="Booker name"/>
+          <input class="js-time" type="number" placeholder="Time in h"/>
+          <input class="js-persons" type="number" placeholder="Persons"/>
+          <input class="js-option" type="checkbox" placeholder="Deductible option" /><a id="deductible">  (Deductible Option)</a>
+        </div>
+      </div>
+    
+      <button id="compute" class="btn btn-primary">Compute</button>
+      <div id="actors">
+        <script src="privateaser.js"></script>
+        <script src="index.js"></script>
+      </div>
+      
+
     </div>
-    <div id="booker">
-      <input class="js-name" type="text" placeholder="Booker name"/>
-      <input class="js-time" type="number" placeholder="Time in h"/>
-      <input class="js-persons" type="number" placeholder="Persons"/>
-      <input class="js-option" type="checkbox" placeholder="Deductible option"/>
-    </div>
-    <button id="compute">Compute</button>
-    <div id="actors"></div>
-    <script src="privateaser.js"></script>
-    <script src="index.js"></script>
   </body>
 </html>
